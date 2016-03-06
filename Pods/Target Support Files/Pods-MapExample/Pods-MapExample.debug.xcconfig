@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/GoogleMaps/Frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BlocksKit" "${PODS_ROOT}/Headers/Public/GoogleMaps" "${PODS_ROOT}/Headers/Public/Masonry"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/BlocksKit" -isystem "${PODS_ROOT}/Headers/Public/GoogleMaps" -isystem "${PODS_ROOT}/Headers/Public/Masonry"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"BlocksKit" -l"Masonry" -l"c++" -l"icucore" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "CoreBluetooth" -framework "CoreData" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreText" -framework "Foundation" -framework "GLKit" -framework "GoogleMaps" -framework "ImageIO" -framework "MessageUI" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+PODS_ROOT = ${SRCROOT}/Pods

@@ -8,14 +8,21 @@
 
 import UIKit
 
+let api = "AIzaSyDd-Qa4OhY0qVi6KBtp4f_EldgMuEzhWg4"
+let apiService = "AIzaSyCSS-rvDstFOLQoSxD9O__W2tZ8M4gjSNg"
+
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+ 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // Initialization of the GoogleMaps SDK.
+        GMSServices.provideAPIKey(api)
+        
         return true
     }
 
