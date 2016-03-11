@@ -9,5 +9,11 @@
 #ifndef MapExample_Bridging_Header_h
 #define MapExample_Bridging_Header_h
 
+#import <BlocksKit/BlocksKit+UIKit.h>
+#import <Masonry/Masonry.h>
+#import <GoogleMaps/GoogleMaps.h>
+#import "AutoCompleteObject.h"
+#import "GMDraggableMarkerManager.h"
+#import "GMDraggableMarkerManagerDelegate.h"
 
 #endif /* MapExample_Bridging_Header_h */

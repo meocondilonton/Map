@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41DA50181C930BF900220A3A /* MapExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA50171C930BF900220A3A /* MapExampleTests.swift */; };
 		41EA3F311C895964009716D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA3F301C895964009716D0 /* AppDelegate.swift */; };
 		41EA3F331C895964009716D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA3F321C895964009716D0 /* ViewController.swift */; };
 		41EA3F361C895964009716D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EA3F341C895964009716D0 /* Main.storyboard */; };
@@ -22,8 +23,21 @@
 		952AC53FDFA7B03091B7B967 /* libPods-MapExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD7F4EBFD12BB072EEE2D0B /* libPods-MapExample.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		41DA501A1C930BFA00220A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41EA3F251C895964009716D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41EA3F2C1C895964009716D0;
+			remoteInfo = MapExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		19FB5976AC221712B2ECCF43 /* Pods-MapExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapExample/Pods-MapExample.release.xcconfig"; sourceTree = "<group>"; };
+		41DA50151C930BF900220A3A /* MapExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41DA50171C930BF900220A3A /* MapExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapExampleTests.swift; sourceTree = "<group>"; };
+		41DA50191C930BFA00220A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41EA3F2D1C895964009716D0 /* MapExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EA3F301C895964009716D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41EA3F321C895964009716D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		41DA50121C930BF900220A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41EA3F2A1C895964009716D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,10 +88,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		41DA50161C930BF900220A3A /* MapExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				41DA50171C930BF900220A3A /* MapExampleTests.swift */,
+				41DA50191C930BFA00220A3A /* Info.plist */,
+			);
+			path = MapExampleTests;
+			sourceTree = "<group>";
+		};
 		41EA3F241C895964009716D0 = {
 			isa = PBXGroup;
 			children = (
 				41EA3F2F1C895964009716D0 /* MapExample */,
+				41DA50161C930BF900220A3A /* MapExampleTests */,
 				41EA3F2E1C895964009716D0 /* Products */,
 				380DFD3664D13E81FAE52BAF /* Pods */,
 				6DC63E9C50280FDC08BE7386 /* Frameworks */,
@@ -81,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				41EA3F2D1C895964009716D0 /* MapExample.app */,
+				41DA50151C930BF900220A3A /* MapExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +168,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		41DA50141C930BF900220A3A /* MapExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41DA501E1C930BFA00220A3A /* Build configuration list for PBXNativeTarget "MapExampleTests" */;
+			buildPhases = (
+				41DA50111C930BF900220A3A /* Sources */,
+				41DA50121C930BF900220A3A /* Frameworks */,
+				41DA50131C930BF900220A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41DA501B1C930BFA00220A3A /* PBXTargetDependency */,
+			);
+			name = MapExampleTests;
+			productName = MapExampleTests;
+			productReference = 41DA50151C930BF900220A3A /* MapExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		41EA3F2C1C895964009716D0 /* MapExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41EA3F3F1C895964009716D0 /* Build configuration list for PBXNativeTarget "MapExample" */;
@@ -166,6 +216,10 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "long nguyen";
 				TargetAttributes = {
+					41DA50141C930BF900220A3A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 41EA3F2C1C895964009716D0;
+					};
 					41EA3F2C1C895964009716D0 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
@@ -185,11 +239,19 @@
 			projectRoot = "";
 			targets = (
 				41EA3F2C1C895964009716D0 /* MapExample */,
+				41DA50141C930BF900220A3A /* MapExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		41DA50131C930BF900220A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41EA3F2B1C895964009716D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +313,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		41DA50111C930BF900220A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41DA50181C930BF900220A3A /* MapExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41EA3F291C895964009716D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +338,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41DA501B1C930BFA00220A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41EA3F2C1C895964009716D0 /* MapExample */;
+			targetProxy = 41DA501A1C930BFA00220A3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		41EA3F341C895964009716D0 /* Main.storyboard */ = {
@@ -289,6 +367,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		41DA501C1C930BFA00220A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1D6D50F0FDC7FD270674F7 /* Pods-MapExample.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MapExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = philong.MapExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapExample.app/MapExample";
+			};
+			name = Debug;
+		};
+		41DA501D1C930BFA00220A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19FB5976AC221712B2ECCF43 /* Pods-MapExample.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MapExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = philong.MapExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapExample.app/MapExample";
+			};
+			name = Release;
+		};
 		41EA3F3D1C895964009716D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -401,6 +505,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		41DA501E1C930BFA00220A3A /* Build configuration list for PBXNativeTarget "MapExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41DA501C1C930BFA00220A3A /* Debug */,
+				41DA501D1C930BFA00220A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		41EA3F281C895964009716D0 /* Build configuration list for PBXProject "MapExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -60,7 +60,7 @@ class ViewController: UIViewController ,GMDraggableMarkerManagerDelegate ,CLLoca
     private let locManager = CLLocationManager()
     private var currentLoc = CLLocationCoordinate2D()
     private var draggableMarkerManager: GMDraggableMarkerManager!
-    private var mapManager = MapManager()
+    var mapManager = MapManager()
     private var start = CLLocationCoordinate2D(latitude: 10.799331, longitude: 106.648939)
     private var end = CLLocationCoordinate2D(latitude: 10.799331, longitude: 106.648939)
     private var markerStart:GMSMarker!
@@ -111,7 +111,7 @@ class ViewController: UIViewController ,GMDraggableMarkerManagerDelegate ,CLLoca
     }
     
     func updateRouter(from from:CLLocationCoordinate2D, to:CLLocationCoordinate2D){
-        mapManager.directionsUsingGoogle(from: markerStart.position, to: markerEnd.position) { (points ,route,directionInformation, boundingRegion, error) -> () in
+        mapManager.directionsUsingGoogle(from: from , to: to) { (points ,route,directionInformation, boundingRegion, error) -> () in
             
             if(error != nil){
                 print(error)
